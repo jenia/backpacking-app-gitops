@@ -2,7 +2,7 @@ name: workflow_01
 on:
   workflow_dispatch:
     inputs:
-      backpacking-map-docker-sha-update:
+      sha:
         description: "sha of the backpacking map"
         required: true
         default: "00000"
