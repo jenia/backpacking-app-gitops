@@ -1,7 +1,12 @@
 name: workflow_01
 on:
   workflow_dispatch:
-    types: [backpacking-map-docker-sha-update]
+    inputs:
+      backpacking-map-docker-sha-update:
+        description: "sha of the backpacking map"
+        required: true
+        default: "00000"
+        type: string
 
 jobs:
   build:
