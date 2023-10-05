@@ -1,0 +1,13 @@
+name: workflow_01
+on:
+  workflow_dispatch:
+    types: [backpacking-map-docker-sha-update]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        env:
+          MESSAGE: ${{ github.event.client_payload.message }}
+        run: echo $MESSAGE
