@@ -15,4 +15,6 @@ jobs:
       -
         env:
           MESSAGE: ${{ github.event.client_payload.sha }}
-        run: echo $MESSAGE
+        run: |
+          echo $MESSAGE
+          ls -l
