@@ -1,6 +1,6 @@
 name: workflow_01
 on:
-  workflow_dispatch:
+  repository_dispatch:
     inputs:
       sha:
         description: "sha of the backpacking map"
