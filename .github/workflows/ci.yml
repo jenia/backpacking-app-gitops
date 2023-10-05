@@ -9,5 +9,5 @@ jobs:
     steps:
       -
         env:
-          MESSAGE: ${{ github.event.client_payload.message }}
+          MESSAGE: ${{ github.event.client_payload.sha }}
         run: echo $MESSAGE
