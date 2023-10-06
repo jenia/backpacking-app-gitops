@@ -25,6 +25,8 @@ jobs:
       -
         name: Commit files
         run: |
+          git config --local user.email "jenia.ivlev@gmail.com"
+          git config --local user.name "Evgeniy Ivlev"
           git add kustomize/base/example/deployment.yaml
           git commit -m "Updated backpacking-map docker sha ${{ github.event.client_payload.sha }}"
       -
