@@ -21,7 +21,7 @@ jobs:
         env:
           MESSAGE: ${{ github.event.client_payload.sha }}
         run: |
-          yq -ei '.spec.template.spec.containers[0].image += "${{ github.event.client_payload.sha }}"' kustomize/base/example/deployment.yaml
+          yq -ei '.spec.template.spec.containers[0].image += ":${{ github.event.client_payload.sha }}"' kustomize/base/example/deployment.yaml
       -
         name: Commit files
         run: |

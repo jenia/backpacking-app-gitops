@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backpacking-map
-        image: eugene2022/backpacking-map:
+        image: eugene2022/backpacking-map
         imagePullPolicy: Always
         ports:
         - name: web
