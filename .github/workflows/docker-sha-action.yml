@@ -22,8 +22,8 @@ jobs:
           MESSAGE: ${{ github.event.client_payload.sha }}
         run: |
           yq -e '.spec.template.spec.containers[0].image += "${{ github.event.client_payload.sha }}"' kustomize/base/example/deployment.yaml > kustomize/base/example/deployment.yaml
-          git config --global user.email "jenia.ivlev@gmail.com"
-          git config --global user.name "Evgeniy Ivlev"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add kustomize/base/example/deployment.yaml
           git commit -m "Updated backpacking-map docker sha  ${{ github.event.client_payload.sha }}"
           git push
