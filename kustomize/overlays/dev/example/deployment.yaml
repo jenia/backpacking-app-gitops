@@ -2,11 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: example-deployment
-  labels:
-    app: example
 spec:
   template:
     spec:
       containers:
-        - 
+        - name: backpacking-map
           image: eugene2022/backpacking-map:4086aeea049e6f4584799227e2751a82e4ddc89a
