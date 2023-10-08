@@ -4,5 +4,7 @@ metadata:
   name: base
 
 resources:
-- example
 - ingress.yaml
+
+components:
+  - ../components/postgres
