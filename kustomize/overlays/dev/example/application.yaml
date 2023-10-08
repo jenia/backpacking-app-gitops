@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/jenia/backpacking-app-gitops
     targetRevision: HEAD
     path: kustomize/overlays/dev/example
+    kustomize:
+      version: v3.5.4
   destination:
     namespace: default
     server: https://kubernetes.default.svc
