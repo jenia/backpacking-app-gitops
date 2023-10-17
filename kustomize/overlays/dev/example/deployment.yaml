@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
         - name: backpacking-map
-          image: eugene2022/backpacking-map:336333fec33364d3e7aa4d89aa4548c8bee75925
+          image: eugene2022/backpacking-map:e319e4913da1cbcb7ef74a9b2015d94d8984d513
